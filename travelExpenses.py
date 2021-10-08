@@ -33,9 +33,19 @@ hotelTotal = total (hotelCostDay1, hotelCostDay2, hotelCostDay3)
 foodTotal = total (foodCostDay1, foodCostDay2, foodCostDay3)
 transportTotal = total (transportCostDay1, transportCostDay2, transportCostDay3)
 
+# calculate overal total for trip
+overallTotal = fuelTotal + hotelTotal + foodTotal + transportTotal
+
 # test calculations
 # print(hotelTotal)
 # print(foodTotal)
 # print(transportTotal)
 
-
+# Display the total to be reimbursed as well as itemised
+print("Name: " + surname + ", " + firstName)
+print("Job: " + jobTitle)
+print("Overall reimbursement:" , overallTotal)
+print("\nFuel cost reimbursement:" ,fuelTotal)
+print("Hotel costs reimbursement:" , hotelTotal)
+print("Food costs reimbursement:" , foodTotal)
+print("Transport costs reimbursement:" , transportTotal)
