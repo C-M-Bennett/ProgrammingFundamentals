@@ -1,21 +1,21 @@
 # User inputs
-firstName = ("Bob")
-surname = ("Smith")
-jobTitle = ("Lecturer")
-startMileage = (20000)
-endMileage = (20050)
+firstName = input("Please enter the first name:")
+surname = input("Please enter the surname:")
+jobTitle = input("Please enter the job title:")
+startMileage = int(input("Please enter the pre trip mileage:"))
+endMileage = int(input("Please enter the post trip mileage:"))
 
-hotelCostDay1 = (100)
-foodCostDay1 = (20)
-transportCostDay1 = (10)
+hotelCostDay1 = int(input("Please enter the hotel cost for day 1:"))
+foodCostDay1 = int(input("Please enter the food cost for day 1:"))
+transportCostDay1 = int(input("Please enter the transport cost for day 1:"))
 
-hotelCostDay2 = (100)
-foodCostDay2 = (50)
-transportCostDay2 = (20)
+hotelCostDay2 = int(input("Please enter the hotel cost for day 2:"))
+foodCostDay2 = int(input("Please enter the food cost for day 2:"))
+transportCostDay2 = int(input("Please enter the transport cost for day 2:"))
 
-hotelCostDay3 = (100)
-foodCostDay3 = (25)
-transportCostDay3 = (10)
+hotelCostDay3 = int(input("Please enter the hotel cost for day 3:"))
+foodCostDay3 = int(input("Please enter the food cost for day 3:"))
+transportCostDay3 = int(input("Please enter the transport cost for day 3:"))
 
 # Calculations
 # calculate fuel using constant for price per mile
@@ -42,9 +42,10 @@ overallTotal = fuelTotal + hotelTotal + foodTotal + transportTotal
 # print(transportTotal)
 
 # Display the total to be reimbursed as well as itemised
+print("\nThe following details have been entered:\n")
 print("Name: " + surname + ", " + firstName)
 print("Job: " + jobTitle)
-print("Overall reimbursement:" , overallTotal)
+print("Overall reimbursement due" , overallTotal)
 print("\nFuel cost reimbursement:" ,fuelTotal)
 print("Hotel costs reimbursement:" , hotelTotal)
 print("Food costs reimbursement:" , foodTotal)
