@@ -9,3 +9,4 @@ temperatureConversion: show temperature in celsius and fahrenheit
 
 Assignment 1 - memory.py - create a program to replicate memory management in the specified way - grade of 90%
 Assignment 2 - bankAccount.py - create a program following the UML diagram provided - grade of 89%
+Assignment 3 - election.py - create a program following the specified rules for each type of voting style - grade of 83%
